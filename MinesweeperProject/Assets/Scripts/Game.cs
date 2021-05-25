@@ -30,14 +30,16 @@ public class Game : MonoBehaviour
         int i = 0;
         while(i < nMines)
         {
+            //fazer uma chacagem para quantidade de espaços que há para se colocar mina; Evitar loop infinito
+
             int x = UnityEngine.Random.Range(0, 9);
             int y = UnityEngine.Random.Range(0, 9);
 
             if (grid[x, y] == null)
             {
-                GameObject empty = new GameObject();
+                GameObject mineTile = Instantiate(Resources.Load("Prefabs/mine", typeof(GameObject)), new Vector3(x,y,0), Quaternion.identity) as GameObject;
 
-                grid[x, y] = empty;
+                grid[x, y] = mineTile;
 
                 Debug.Log("(" + x + ", " + y + ")");
 
