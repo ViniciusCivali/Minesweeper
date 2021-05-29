@@ -11,5 +11,20 @@ public class Tile : MonoBehaviour
         Clue
     }
 
-    public TileKind tileKind = TileKind.Blank; 
+    public bool isCovered = true;
+
+    public Sprite coveredSprite;
+
+    public TileKind tileKind = TileKind.Blank;
+
+    private Sprite defaultSprite;
+
+    private void Start()
+    {
+        defaultSprite = GetComponent<SpriteRenderer>().sprite;
+
+        GetComponent<SpriteRenderer>().sprite = coveredSprite;
+    }
+
+
 }
