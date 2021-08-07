@@ -7,6 +7,8 @@ Wikipedia: "https://en.wikipedia.org/wiki/Minesweeper_(video_game)"
 
 Some versions of Minesweeper set up the board (after the first click) so that the solution does not require guessing. Minesweeper for versions of Windows protects the first square revealed; from Windows Vista onward, players may elect to replay a board, in which the game is played by revealing squares of the grid by clicking or otherwise indicating each square. If a square containing a mine is revealed, the player loses the game. If no mine is revealed, a digit is instead displayed in the square, indicating how many adjacent squares contain mines; if no mines are adjacent, the square becomes blank, and all adjacent squares will be recursively revealed. The player uses this information to deduce the contents of other squares and may either safely reveal each square or mark the square as containing a mine."
 
+Thanks: "https://www.youtube.com/c/WeeklycoderDotcom"
+
 Not the executable, it takes Unity to play it.
 
 ![minesweper](https://user-images.githubusercontent.com/74788707/128615150-b0c593bf-9807-449d-ad04-deb08ff143bc.gif)
